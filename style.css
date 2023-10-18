@@ -1,0 +1,80 @@
+* {
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(184, 221, 212);
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    background-color: rgb(204, 236, 211);
+    border-radius: 10px;
+    width:30%;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+img {
+    width: 300px;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(109, 185, 141);
+}
+
+#SiteContainer {
+    background-color: rgb(133, 216, 168);
+    max-width: 60%;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 8px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: rgb(109, 185, 141);
+    padding: 20px;
+}
+
+.textContainer {
+    background-color: rgb(178, 252, 199);
+    width: fit-content;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+nav ul {
+    background-color: rgb(95, 189, 122);
+    overflow: hidden;
+    list-style-type: none;
+    border-radius: 5px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+    nav ul a {
+        float: right;
+        display: block;
+        color: rgb(40, 90, 50);
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+nav a:hover {
+    background-color: rgb(51, 182, 110);
+}
+
+#active {
+    background-color: rgb(178, 252, 199);
+}
