@@ -8,8 +8,12 @@ body {
     text-align: center;
 }
 
+li {
+    text-align: left;
+}
+
 h1 {
-    font-size: 48px;
+    font-size: 2.5em;
     background-color: rgb(204, 236, 211);
     border-radius: 10px;
     width:30%;
@@ -19,7 +23,7 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 2em;
 }
 
 img {
@@ -77,4 +81,11 @@ nav a:hover {
 
 #active {
     background-color: rgb(178, 252, 199);
+}
+
+.days {
+    max-width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+
 }
