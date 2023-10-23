@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="textContainer">
+        <a href="index.html">Home</a>
+        <p id="notes">Building Schema SQL--------------------------------- <br>
+            <br>
+            CREATE TABLE tablename (<br>
+                field1name int,<br>
+                field2name varchar(255),<br>
+                field3name boolean<br>
+            );<br>
+            <br>
+            CREATE TABLE Person (<br>
+                MemberNumber int,<br>
+                LastName varchar(255),<br>
+                FirstName varchar(255),<br>
+                Address varchar(255),<br>
+                Town varchar(255),<br>
+                PostCode varchar(255)<br>
+            );<br>
+            <br>
+            INSERT INTO Person<br>
+            VALUES<br>
+            (0001,'Kenyon','Tom','Home','Stockport','SK5***'),<br>
+            (0002,'Doe','John','Manchester road','Manchester','SM4***'),<br>
+            (0003,'Doe','Jane','Willaby road','Worcestershire','MK2***');<br>
+            <br>
+            <br>
+            <br>
+            <br>
+            SQL Code---------------------------------------------------<br>
+            <br>
+            Select * from Person   // selects all items from the table Person<br>
+            <br>
+            DELETE FROM Person WHERE MemberNumber = 0002; // deletes the whole record where Member number is equal to 0002<br>
+            <br>
+            <br>
+            UPDATE Person<br>
+            SET FirstName = "Beans"<br>
+            WHERE MemberNumber = 0002;<br>
+            <br>
+            <br>
+            <br>
+            <br>
+            CREATE TABLE BoardGames (<br>
+            Name VarChar(255),<br>
+            MinimumPlayers int,<br>
+            MaximumPlayers int,<br>
+            AgeRating VarChar(255),<br>
+            AverageDuration VarChar(255),<br>
+            Style VarChar(255),<br>
+            RetailCost VarChar(255),<br>
+            YearReleased int,<br>
+            Version VarChar(255),<br>
+            Rating VarChar(255)<br>
+            );<br>
+            <br>
+            INSERT INTO BoardGames<br>
+            VALUES<br>
+            ("Wingspan",1,5,"10+","1 hour","Competitive","£64.99",2019,"2nd Edition", "5 stars"),<br>
+            ("Carcassonne",2,5,"7+","40 minutes","Competitive","£24.99",2015,"3rd Edition","4 stars"),<br>
+            ("Horrified",1,5,"10+","1 hour","Cooperative","£40.00",2019,"1st Edition","3 stars");<br>
+            <br>
+            UPDATE BoardGames<br>
+            SET RetailCost="£54.99"<br>
+            WHERE Name = "Wingspan";<br>
+            <br>
+            UPDATE BoardGames<br>
+            SET Rating = "4 stars"<br>
+            WHERE Name = "Horrified";<br>
+            <br>
+            % = swap out<br>
+            LIKE % to %<br>
+            will return anything that has  to  in the middle and text on either side of it where the percents are<br>
+            LIKE C%<br>
+            first letter is C   <br>
+            <br>
+            <br>
+            SELECT GameTitle,Price,Published FROM Games WHERE Notes IS NOT null AND Price > 50 AND Competetive = true AND MaxPlayers >= 4;<br>
+            <br>
+            SELECT DISTINCT Country FROM Customers; will return every seperate country once<br>
+            <br>
+            ORDER BY Price; orders it in ascending order  0-9  A-Z<br>
+            ORDER BY Price DESC;  orders in descending order<br>
+            <br>
+            SELECT *<br>
+            FROM Customers<br>
+            WHERE Country = 'Germany' OR Country = 'Spain';<br>
+            <br>
+            SELECT TOP 3 * FROM Customers; returns the first 3 from the database<br>
+            <br>
+            SELECT MIN(Price) returns the smallest<br>
+            SELECT MAX(Price) returns the largest<br>
+            <br>
+            SELECT COUNT(*) returns the number of records that match<br>
+            <br>
+            SELECT COUNT(ProductID)<br>
+            FROM Products<br>
+            WHERE Price > 20;<br>
+            <br>
+            SELECT SUM(Quantity) returns the sum of all records that match<br>
+            <br>
+            SELECT AVG(Price) returns the average of all records that match<br>
+            <br>
+            WHERE CustomerName LIKE 'a%'; like means similar<br>
+            The percent sign % represents zero, one, or multiple characters<br>
+            The underscore sign _ represents one, single character<br>
+            <br>
+            <br>
+            %	Represents zero or more characters<br>
+            _	Represents a single character<br>
+            []	Represents any single character within the brackets *   SELECT * FROM Customers WHERE CustomerName LIKE '[a-f]%'; returns any that start with a,b,c,d,e,f<br>
+            ^	Represents any character not in the brackets *<br>
+            -	Represents any single character within the specified range *<br>
+            {}	Represents any escaped character **<br>
+            <br>
+            <br>
+            WHERE Country IN ('Germany', 'France', 'UK'); works like multiple ORs so it will return any with Country = Germany OR France Or UK<br>
+            <br>
+            SELECT * FROM Products<br>
+            WHERE Price BETWEEN 10 AND 20; returns all where price is less than 20 and more than 10<br>
+            <br>
+            SELECT * FROM Products<br>
+            WHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'<br>
+            ORDER BY ProductName;  returns all that are alphabetically between C and M</p><br>
+        </div>
+</body>
+</html>
