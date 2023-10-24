@@ -107,3 +107,13 @@ nav a:hover {
 #notes {
     text-align: left;
 }
+
+.horizontalConatiner {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.imgSideBySide {
+    width: 14%;
+}
