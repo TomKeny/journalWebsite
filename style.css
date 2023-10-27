@@ -101,11 +101,13 @@ nav a:hover {
 
 .days li {
     font-size:1.3em;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
 #smallList li {
     font-size: 1.1em;
+    font-weight: normal;
     margin-bottom: 5px;
 }
 
@@ -121,4 +123,14 @@ nav a:hover {
 
 .imgSideBySide {
     width: 14%;
+}
+
+#bigDiagram {
+    width: 80%;
+    border: none;
+}
+
+#smallDiagram {
+    width: 40%;
+    border: none;
 }
