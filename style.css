@@ -57,7 +57,7 @@ img {
 
 .textContainer {
     background-color: rgb(178, 252, 199);
-    width: fit-content;
+    width: 95%;
     margin-left:auto;
     margin-right: auto;
     border-radius: 8px;
@@ -71,9 +71,6 @@ nav ul {
     justify-content: space-evenly;
     overflow: hidden;
     list-style-type: none;
-    border-radius: 5px;
-    margin-left:auto;
-    margin-right: auto;
 }
 
     nav ul a {
@@ -89,12 +86,17 @@ nav a:hover {
     background-color: rgb(51, 182, 110);
 }
 
+header {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
 #active {
     background-color: rgb(178, 252, 199);
 }
 
 .days {
-    max-width: 70%;
+    max-width: 90%;
     margin-left:auto;
     margin-right: auto;
 }
@@ -133,4 +135,19 @@ nav a:hover {
 #smallDiagram {
     width: 40%;
     border: none;
+}
+
+#monday,#tuesday,#wednesday,#thursday,#friday {
+    background-color: rgb(216, 247, 223);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgb(204, 236, 211);
+    max-height: 100%;
+}
+
+#monday:hover,#tuesday:hover,#wednesday:hover,#thursday:hover,#friday:hover {
+    background-color: rgb(206, 233, 212);
 }
