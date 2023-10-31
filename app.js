@@ -1,3 +1,4 @@
+/*
 const monday = document.getElementById("monday");
 const tuesday = document.getElementById("tuesday");
 const wednesday = document.getElementById("wednesday");
@@ -16,17 +17,17 @@ let col3 = wednesday.children;
 let col4 = thursday.children;
 let col5 = friday.children;
     
-function swap(day,list,col) {
-    if (day.offsetHeight == list.offsetHeight + 66) {
+function swap(day) {
+    if (day.offsetHeight == day.children[0].offsetHeight + 66) {
         day.style.maxHeight = "none";
-        for (let i = 1; i < col.length; i++) {
-            col[i].style.display = "block";
+        for (let x = 1; x < day.children.length; x++) {
+            day.children[x].style.display = "block";
         }
     }
     else {
-        day.style.maxHeight = `${list.offsetHeight}px`;
-        for (let i = 1; i < col.length; i++) {
-            col[i].style.display = "none";
+        day.style.maxHeight = `${day.children[0].offsetHeight}px`;
+        for (let x = 1; x < day.children.length; x++) {
+            day.children[x].style.display = "none";
         }
     }
 };
@@ -46,3 +47,28 @@ swap(tuesday,l2,col2)
 swap(wednesday,l3,col3)
 swap(thursday,l4,col4)
 swap(friday,l5,col5)
+
+this ^ is definitely code to reflect back on and learn from for me
+*/
+
+const days = document.getElementsByClassName("day");
+
+for (let i = 0; i < days.length; i++) {
+    days[i].addEventListener("click", function() {swap(days[i])});
+    swap(days[i])
+}
+
+function swap(day) {
+    if (day.offsetHeight == day.children[0].offsetHeight + 66) {
+        day.style.maxHeight = "none";
+        for (let x = 1; x < day.children.length; x++) {
+            day.children[x].style.display = "block";
+        }
+    }
+    else {
+        day.style.maxHeight = `${day.children[0].offsetHeight}px`;
+        for (let x = 1; x < day.children.length; x++) {
+            day.children[x].style.display = "none";
+        }
+    }
+};

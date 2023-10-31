@@ -33,24 +33,46 @@
             <p>between html,CSS and javascript</p> 
             <p>Our lessons were as follows:</p> 
             <ul class="days"> 
-                <div id="monday">
-                    <li id = "1li">Monday - JSDOM introductions</li>
+                <div class="day">
+                    <li>Monday - JSDOM introductions</li>
                     <p>We started learning JSDOM which is how we connect the HTML and CSS to our javascript, this is done by grabbing elements using a multitude of ways, such as: tag, id, class. You can grab an element using the syntax shown below</p>
                     <img src="images/JSDOM1.png" id="bigDiagram">
                     <p>And you can access the CSS and HTML attributes of elements the same way you access regular objects, dot notation, which can be seen below</p>
                     <img src="images/JSDOM2.png">
                 </div>
-                <div id="tuesday">
-                    <li id = "2li">Teusday - </li>
+                <div class="day">
+                    <li>Tuesday - SQL normalization and further JSDOM</li>
+                    <p>When you want to effectively store data without any redundant or inconsistent records you can break up your database into smaller, more managable databases, this process is called normalization and it helps by breaking down the tables until the values in each table are only dependant on that tables primary key and only that primary key</p>
+                    <p>There are multiple keys involved in normalization</p>
+                    <ul id="smallList">
+                        <li>Primary Key - a unique identifier value for a record in a table</li>
+                        <li>Foreign Key - a value from another table used to link to and access this tables records, often another tables primary key</li>
+                        <li>Composite Key - a combination of multiple keys from seperate tables in a new bridging table to link the tables together</li>
+                    </ul>
+                    <p>The types of links between tables can also be broken down into 3 types</p>
+                    <ul id="smallList">
+                        <li>One to One - a single record links to single record in another table (one person to one medical history)</li>
+                        <li>One to Many - a single record links to multiple records in another table (one author to many books)</li>
+                        <li>Many to Many - multiple records link to multiple records in another table (multiple customers buy multiple products)</li>
+                    </ul>
+                    <p>As a general rule we want to avoid many to many relationships as it leads to redundant and inconsistent data, to break down many to many relationships we use normalisation which the first 3 steps of are:</p>
+                    <ul id="smallList">
+                        <li>1st normal form - a single cell holds one value (atomicity), there is a primary key, no duplicate rows or columns, each column has one value for each row in the table, each row must be unique</li>
+                        <li>2nd normal form - 1st normal form must be met, all values that are dependant on the primary key stay in the main table, all values not dependant on the primary key are put in new tables where they are put in a way that they are all dependent on their tables primary key</li>
+                        <li>3rd normal form - 2nd normal form must be met, has no transitive functional dependency(all values in each table must depend on only the primary key and no other values)</li>
+                    </ul>
+                    <img src="images/normalization.png" id="bigDiagram">
+                    <p>For the rest of the day we worked on more JSDOM challenges that showed more functionality like creating and destroying elements as well as setting timers and new event listeners like mouseover and mouseout which trigger when the mouse enters or leaves an element</p>
+                    <img src="images/JSDOM3.png" id="bigDiagram">
                 </div>
-                <div id="wednesday">
-                    <li id = "3li">Wednesday - </li>
+                <div class="day">
+                    <li>Wednesday - </li>
                 </div>
-                <div id="thursday">
-                    <li id = "4li">Thursday - </li>
+                <div class="day">
+                    <li>Thursday - </li>
                 </div>
-                <div id="friday">
-                    <li id = "5li">Friday - </li>
+                <div class="day">
+                    <li>Friday - </li>
                 </div>
 
             </ul>

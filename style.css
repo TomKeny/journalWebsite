@@ -15,6 +15,8 @@ li {
 h1 {
     font-size: 2.5em;
     background-color: rgb(204, 236, 211);
+    border-color: rgb(95, 189, 122);
+    border-style: solid;
     border-radius: 10px;
     min-width: 180px;
     max-width: 30%;
@@ -25,6 +27,14 @@ h1 {
 
 h2 {
     font-size: 2em;
+    background-color: rgb(216, 247, 223);
+    border-radius: 5px;
+    border-color: rgb(95, 189, 122);
+    border-style: solid;
+    padding: 10px;
+    width:fit-content;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 h4{
@@ -137,7 +147,7 @@ header {
     border: none;
 }
 
-#monday,#tuesday,#wednesday,#thursday,#friday {
+.day {
     background-color: rgb(216, 247, 223);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -148,6 +158,6 @@ header {
     max-height: 100%;
 }
 
-#monday:hover,#tuesday:hover,#wednesday:hover,#thursday:hover,#friday:hover {
+.day:hover {
     background-color: rgb(206, 233, 212);
 }
