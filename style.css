@@ -161,3 +161,9 @@ header {
 .day:hover {
     background-color: rgb(206, 233, 212);
 }
+
+#leftText {
+    text-align: left;
+    Margin-left: 0;
+    margin-right: 0;
+}

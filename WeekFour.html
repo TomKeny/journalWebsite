@@ -75,7 +75,26 @@
                     <p>Afterword - I spent the entirety of wednesday night optimizing it and am honestly impressed with myself, when I initialy coded it only me and god knew how it worked, now only god knows</p>
                 </div>
                 <div class="day">
-                    <li>Thursday - </li>
+                    <li>Thursday - SQL Joins</li>
+                    <p>On Thursday we learned about SQL Joins, a way to connect multiple tables together by joining the tables at a specific data point</p>
+                    <p>The syntax for joining tables is shown below:</p>
+                    <p id="leftText">SELECT fieldsYouWantToDisplayFromBothTables <br>
+                        FROM 1stTable<br>
+                        JoinType JOIN 2ndTable ON 1stTableKey=2ndTableKey (the shared key from each table)<br>
+                        WHERE condition (this line is optional)</p>
+                        <p>Below is an example of a double join</p>
+                        <img src="images/Join3.png" id="bigDiagram">
+                        <p>The Join types are as follows:</p>
+                        <ul id="smallList">
+                            <li>INNER JOIN - returns records that match</li>
+                            <li>LEFT JOIN - returns the entire left table and matched records from the right</li>
+                            <li>RIGHT JOIN - returns the entire right table and matched records from the left</li>
+                            <li>FULL OUTER JOIN - returns all records from both tables when their is a match in either table</li>
+                        </ul>
+                        <img src="images/Join4.png">
+                        <p><br>Another Way to look at joins is as sewing tables together where, in the tables, the shared key matches</p>
+                        <img src="images/Join1.png" id="bigDiagram">
+                        <img src="images/Join2.png" id="bigDiagram">
                 </div>
                 <div class="day">
                     <li>Friday - </li>
