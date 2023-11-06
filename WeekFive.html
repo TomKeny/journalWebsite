@@ -34,7 +34,33 @@
             <p>Our lessons were as follows:</p> 
             <ul class="days"> 
                 <div class="day">
-                    <li>Monday - </li>
+                    <li>Monday - Javascript engine and Higher Order Functions</li>
+                    <p>A javascript engine is an engine used to interpret javascript into machine code, this is done by putting javascript(source code) into a compiler which compiles it into machine code, some engines have a secondary compiler called an optimization compiler that re compiles the code multiple times to make it run faster and more efficiently</p>
+                    <img src="images/jsengine.png" id="bigDiagram">
+                    <p>Javascript engines are often made up of 2 main components</p>
+                    <ul id="smallList">
+                        <li>Memory heap: where data is stored, in charge of memory allocation</li>
+                        <li>Call stack: The code being ran, in order. Keeps the flow of execution by running one line at a time</li>
+                    </ul>
+                    <img src="images/jsenginestack.png" id="bigDiagram">
+                    <p>There is a lot more to learn about javascript engines and the order of execution but it's much more than I think I can put in one day's notes so you can find out more by clicking <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ" target="blank">here</a></p>
+                    <p>We also learned about scope, scope is which variables can be accessed and from where, a good way to look at it is that you can look outward but not inward</p>
+                    <ul id="smallList">
+                        <li>Global scope: anything defined here can be accessed anywhere in your code, often put at the top of your code</li>
+                        <li>Function scope: variables declared in the function can only be accessed in the function and cannot be accessed from outside the function</li>
+                    </ul>
+                    <img src="images/scopediagram.png" id="bigDiagram">
+                    <p>Execution context: the scope that a piece of code is run in</p>
+                    <ul id="smallList">
+                        <li>Global execution context: code ran in main</li>
+                        <li>Global memory: data stored from code ran in main, often remains for the entirety of a program running</li>
+                        <li>Local execution context: code ran in the scope of a function</li>
+                        <li>Local memory: data stored from code inside a function, destroyed upon the function being completed</li>
+                    </ul>
+                    <p>Higher Order Functions: Fucntions that either take a function as a parameter or return a function</p>
+                    <p>An example of a practical use of a HOF would be:</p>
+                    <img src="images/HOF.png">
+                    <p>You can look at another application of HOF <a href="https://www.w3schools.com/jsref/jsref_map.asp" target="blank">here</a></p>
                 </div>
                 <div class="day">
                     <li>Tuesday - </li>
