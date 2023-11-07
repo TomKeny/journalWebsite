@@ -167,3 +167,9 @@ header {
     Margin-left: 0;
     margin-right: 0;
 }
+
+.divider {
+    background-color: rgb(40, 90, 50);
+    height: 5px;
+    border-radius:10px;
+}
