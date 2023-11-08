@@ -78,8 +78,47 @@
                     <img src="images/parsefetch.png">
                 </div>
                 <div class="day">
-                    <li>Wednesday - </li>
+                    <li>Wednesday - Classes and Github Branches</li>
                     <div class="divider"></div>
+                    <p>On friday we learned about classes, classes are templates for objects and can be declared using the class keyword, classes contain a constructor to initialize its properties, constructors take parameters which are passed into the object upon object creation.<br>
+                    Classes can sloe contain methods which can be called upon with the syntax "objectName.MethodName()"</p>
+                    <img src="images/class.png" id="mediumDiagram">
+                    <p>Classes can also inherit properties and methods from their parents when told to do so, this done using the extends keyword. There is also the keyword super which takes the initializer from the parent class for a property</p>
+                    <img src="images/inheritance.png" id="mediumDiagram">
+                    <p></p>
+                    <div class="divider"></div>
+                    <h2>Collaborative Github</h2>
+                    <p>Github Branching is a large topic but it breaks down to source control best practices, these practices are:</p>
+                    <ul id="smallList">
+                        <li>Avoid coding directly on the master branch as it can lead to conflicts and loss of work</li>
+                        <li>Split features being developed into seperate branches and merge them into master one by one once the features are mostly bug free</li>
+                        <li>When a conflict arises, sit down with the person who wrote the conflicting code whilst resolving the conflicts or you will end up deleting important code that you don't understand</li>
+                        <li>Name branches reasonably, when people look back at your code down the line "branch 12" won't mean anything but "form input handler" will</li>
+                        <li>Check with peers before you put in a merge request as they may spot glaring issues that could affect other bits of code</li>
+                    </ul>
+                    <p class="tinyTitle">Inviting Collaborators</p>
+                    <p>To invite collaborators, first open the repository in browser and select settings on the bar at the top<br>
+                    One of the first options should be collaborators under the access headline<br>
+                    Next select "Add people" it should be a green button<br>
+                    Now you just need to enter their email, username or full name and click "Add name to this repository"</p>
+                    <img src="images/settingsGit.png" id="mediumDiagram">
+                    <img src="images/collaborators.png" id="mediumDiagram">
+                    <img src="images/addCollaborators.png" id="mediumDiagram">
+                    <p class="tinyTitle">Creating a branch</p>
+                    <p>To create a branch first open github desktop on the repository you want to branch and select the "current branch" button<br>
+                    Select the branch that you want to branch from, this is typically the main or master branch<br>
+                    From there click "New Branch" and give it an appropriate name and click "Create Branch"<br>
+                    You now have a branch to work on that won't affect the main or master branch until merging which I will go into later on</p>
+                    <img src="images/newBranch.png" id="mediumDiagram">
+                    <img src="images/createBranch.png" id="mediumDiagram">
+                    <p class="tinyTitle">Merging</p>
+                    <p>To merge a branch to another branch or the master/main branch you first need to open the branch that you want to merge into<br>
+                    Hover over "Branch" and select "Merge into current branch"<br>
+                    Select the branch you want to merge into the current branch and click "Create a merge commit"<br>
+                    If a Merge conflict shows up, follow the guide <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github" target="blank">here</a></p>
+                    <img src="images/selectBranch.png" id="mediumDiagram">
+                    <img src="images/mergeToCurrent.png" id="mediumDiagram">
+                    <img src="images/mergeCommit.png" id="mediumDiagram">
                 </div>
                 <div class="day">
                     <li>Thursday - </li>

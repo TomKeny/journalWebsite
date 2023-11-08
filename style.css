@@ -142,6 +142,10 @@ header {
     border: none;
 }
 
+#mediumDiagram {
+    width: 60%;
+}
+
 #smallDiagram {
     width: 40%;
     border: none;
@@ -172,4 +176,9 @@ header {
     background-color: rgb(40, 90, 50);
     height: 5px;
     border-radius:10px;
+}
+
+.tinyTitle {
+    font-weight: bold; 
+    font-size: 1.2em;
 }
