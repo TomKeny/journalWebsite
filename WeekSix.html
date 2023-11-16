@@ -76,8 +76,76 @@
                     <p>On wednesday we spent the whole day working on our group projects, I will go into more detail of our group project on friday</p>
                 </div>
                 <div class="day">
-                    <li>Thursday - </li>
+                    <li>Thursday - MongoDB</li>
                     <div class="divider"></div>
+                    <p>On thursday we covered a lot so this is going to be a long one</p>
+                    <p>First we had a brief mention of the stack which goes in the order:</p>
+                    <ul id="smallList">
+                        <li>Users</li>
+                        <li>Front End UX</li>
+                        <li>Web Interfaces</li>
+                        <li>Server Applications</li>
+                        <li>Database</li>
+                    </ul>
+                    <img src="images/fullstack.png" id="mediumDiagram">
+                    <p class="tinyTitle">NoSQL</p>
+                    <p>NoSQL stands for Not Only SQL, NoSQL is a more flexible version of SQL that has the following key properties:</p>
+                    <ul id="smallList">
+                        <li>Does not rquire a fixed schema</li>
+                        <li>Can dynamically add fields</li>
+                        <li>Scales horizontally, documents can stretch which lets it handle large amounts of data without significant performance decrease</li>
+                        <li>Can continue to operate in the event of hardware failures</li>
+                        <li>NoSQL has a fast read write speed, especially with large data sets</li>
+                        <li>NoSQL can be cheaper to set up and maintain</li>
+                    </ul>
+                    <p>An example of a NoSQL database management tool would be MongoDB</p>
+                    <p class="tinyTitle">MongoDB</p>
+                    <p>The key features around MongoDB are:</p>
+                    <ul id="smallList">
+                        <li>Open source</li>
+                        <li>Uses JSON like documents</li>
+                        <li>Highly scaleable</li>
+                        <li>No pre-defined schemas</li>
+                        <li>Tables and data structures are mutable</li>
+                        <li>Can run on a single server or be distributed</li>
+                    </ul>
+                    <p>MongoDB doesn't use the same words as SQL, the 3 parts of storing data are:</p>
+                    <ul id="smallList">
+                        <li>Database - similar to an SQL database but more flexible</li>
+                        <li>Collection - equivalent to a table however it's size is mutable</li>
+                        <li>Document - the same as a row but can contain nested arrays or sub-documents</li>
+                    </ul>
+                    <p>Before we move onto how to use MongoDB, a quick explanation of the syntax they use. MongoDBShell uses JSON which stands for JavaScript Object Notation, the things you need to know to use it are:</p>
+                    <ul id="smallList">
+                        <li>Data is stored in key value pairs</li>
+                        <li>Data is seperated by commas</li>
+                        <li>Curly braces hold objects</li>
+                        <li>Square brackets hold arrays</li>
+                    </ul>
+                    <p>Now we can get into how to use MongoDB, first you will need to load up MongoDB compass and MongoDBShell, on compass, copy the url string that it gives you, it should be similar to "mongodb://localhost:27017" and then click connect</p>
+                    <img src="images/mongoConnect.png" id="mediumDiagram">
+                    <p>From here we want to now go to MongoDBShell and type in the url we coppied earlier and hit enter, this will connect the shell to the compass and allow you to use MongoDBShell commands</p>
+                    <img src="images/mongoshellconnect.png" id="mediumDiagram">
+                    <p>Once you are connected to your Compass you will need to create a database in compass so that you can use it to make collections and start setting up a proper database, to do this you click the + icon next to databases and fill in the required information, once you've done that you can go back to MongoDBShell</p>
+                    <img src="images/mongocreate.png" id="mediumDiagram">
+                    <p>Once you are back in shell you will need to type in "use databaseName" where database name is the name of the database you created, from here you can use the commands in the following list to insert, edit, delete and querry data. (// and after are a description of the command)</p>
+                    <ul id="smallList">
+                        <p>Setup and querry</p>
+                        <li>use databasename  // selects the database to use</li>
+                        <li>db.createCollection("collectionname")  // creates a collection</li>
+                        <li>db.collectionname.find()  // shows all records in a collection</li>
+                        <li>db.collectionname.find( {Id: "_0123"} )  // shows all records that match the collection</li>
+                        <p>Insert</p>
+                        <li>db.collectionname.insertOne({key: value, name: "dave"})  //inserts a single record</li>
+                        <li>db.collectionname.insertMany([{document1},{document2}])  // inserts multiplee records</li>
+                        <p>Delete</p>
+                        <li>db.collectionname.deleteOne({condition})  // deletes the first record that matches the condition</li>
+                        <li>db.collectionname.deleteAll({condition})  // deletes all records that match the condition</li>
+                        <p>Update/Replace</p>
+                        <li>db.collectionname.updateOne({condition}, {$set: {fieldname: newvalue}})  // updates a value in one record</li>
+                        <li>db.collectionname.updateMany({condition}, {$set: {fieldname: newvalue}})  // updates multiple records</li>
+                        <li>db.collectionname.replaceOne({condition}, {new record})  // replaces a record with a new one</li>
+                    </ul>
                 </div>
                 <div class="day">
                     <li>Friday - </li>
