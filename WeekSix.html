@@ -28,15 +28,15 @@
             </nav>
         </header>
         <div class="textContainer"> 
-            <h2>TITLE</h2> 
-            <p></p> 
-            <p></p> 
+            <h2>Group Project and MongoDB</h2> 
+            <p>On Weeks 6 we worked on a collaborative</p> 
+            <p>project and learned about mongoDB</p> 
             <p>Our lessons were as follows:</p> 
             <ul class="days"> 
                 <div class="day">
-                    <li>Monday - Group project start</li>
+                    <li>Monday - Group Project Start</li>
                     <div class="divider"></div>
-                    <p>Did the planning for our group project which will be submitted friday where I will go into more detail</p>
+                    <p>We did the planning for our group project which will be submitted friday where I will go into more detail</p>
                 </div>
                 <div class="day">
                     <li>Tuesday - Coding Paradigms</li>
@@ -71,7 +71,7 @@
                     <p>A lot of programming languages work extremely similarly however they use different syntax, almost all programming languages use at least one of the paradigms I have mentioned in this day's notes</p>
                 </div>
                 <div class="day">
-                    <li>Wednesday - group project work</li>
+                    <li>Wednesday - Group Project Work</li>
                     <div class="divider"></div>
                     <p>On wednesday we spent the whole day working on our group projects, I will go into more detail of our group project on friday</p>
                 </div>
@@ -148,8 +148,33 @@
                     </ul>
                 </div>
                 <div class="day">
-                    <li>Friday - </li>
+                    <li>Friday - Project Presentation</li>
                     <div class="divider"></div>
+                    <p>On friday morning we presented our project which was a small turn based combat game with a puzzle at the end, The first thing we did was make a user flow so that we could get a general plan in mind for what it was going to look like and how it was going to function</p>
+                    <img src="images/generalFlow.png" id="bigDiagram">
+                    <img src="images/combatFlow.png" id="bigDiagram">
+                    <p>We also set up a miro board to show what needed to be done, what people where doing and what was already done. We also put what was essential and what was a could have on the board as well</p>
+                    <img src="images/miroBoard.png" id="bigDiagram">
+                    <p>After planning was done we got stuck into the code where we set up some basic things like the classes that we were going to use as well as the properties they would have so that we could referance them elsewhere, we also set up different files for each bit of code so that nothing got cluttered or overlapped</p>
+                    <img src="images/fileNames.png" id="mediumDiagram">
+                    <img src="images/tombOfMythralis.png" id="bigDiagram">
+                    <p>The first class we made was the character class that enemy and player extend off which had the base properties of: health, attack, defence and name which were the properties that were going to be used everywhere and by all created objects</p>
+                    <img src="images/characterClass.png" id="mediumDiagram">
+                    <p>I'm not going to go too in depth into the code but the combat system basically used a while loop that would advance the "turn" on each iteration and would do so until the player or enemy health went below 0, this worked alongside a queue array that would activate certain functions based on the turn number passed in if the current turn and the turn in the queue so it would take the name and object passed in with the turn number and do an action to the object based on the name passed in</p>
+                    <img src="images/combatLoop.png" id="mediumDiagram">
+                    <img src="images/turnCheck.png" id="bigDiagram">
+                    <p>The combat would start with taking the players input, running a function based on that input and then doing a random enemy move based on the enemy, and then doing any functions that are set to activate on this turn from the queue, this loop would repeat until either the player or the enemy are dead</p>
+                    <img src="images/combatFunction.png" id="bigDiagram">
+                    <img src="images/enemyTurn.png" id="mediumDiagram">
+                    <img src="images/playerInput.png" id="mediumDiagram">
+                    <img src="images/choseMove.png" id="mediumDiagram">
+                    <img src="images/showMove.png" id="mediumDiagram">
+                    <p>The final functions were a maze puzzle that would display only 2 spots away from the player so they had limited visibility, this was done using a 2D array where each eelement was considered a coordinate and used to check for what was on each space, this worked great and gave a nice finish to the project, getting out showed you a bit of victory dialogue and how long it took you to get out</p>
+                    <img src="images/MazeEnter.png" id="mediumDiagram">
+                    <img src="images/Maze.png" id="mediumDiagram">
+                    <p>For this project we used github which allowed us to collaboratively work on the same piece of code, splitting up the files also helped avoid merge conflicts as we wouldn't be working on the same file most of the time, we used plenty of branches to avoid having to do constant conflict resolutions and we decided to complete a feature and then merge it in and deal with conflicts once a feature was complate rather than every commit</p>
+                    <img src="images/ProjectBranches.png" id="mediumDiagram">
+                    <p>There's plenty more I could go into but this is starting to get really long, if you want to check out the code which has comments for readability you can find it <a href="https://github.com/TomKeny/Week6EscapeRoom" target="blank">here</a>, if you want to run it, just type into the console "node ./index.js" in your coding IDE</p>
                 </div>
 
             </ul>
