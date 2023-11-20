@@ -34,8 +34,45 @@
             <p>Our lessons were as follows:</p> 
             <ul class="days"> 
                 <div class="day">
-                    <li>Monday - </li>
+                    <li>Monday - Introduction To React</li>
                     <div class="divider"></div>
+                    <p>React is a library used to create user interfaces by combining HTML and javascript in a programming language called JSX or JavaScript XML, react rerenders updated elements to constantly keep the site in sync whilst not having to refresh or reload the page</p>
+                    <p>The main appeal of react is creating reusable components that are much faster to use than copying over elements multiple times where you'd have to manually set up each one, components are basically the functions of HTML</p>
+                    <p>React creates a tree of elements that start off as one element, the root, below is an example of how the the elemnts work like a tree, the files also tend to come out this way</p>
+                    <img src="images/RootTree.png" id="mediumDiagram">
+                    <img src="images/react1.png" id="mediumDiagram">
+                    <img src="images/react2.png" id="mediumDiagram">
+                    <img src="images/react3.png" id="bigDiagram">
+                    <p>To create a react app, you need: npm, webpack, babel compiler, react and reactDOM and a development server to use locally</p>
+                    <p>The steps to set up a react app are:</p>
+                    <ul id="smallList">
+                        <li>npm install create-react-app  //this installs the package used to create react apps</li>
+                        <li>npx create-react-app appname  //this creates the react app, name has to be lowercase</li>
+                        <li>npm start  //starts the app</li>
+                    </ul>
+                    <p>You can use a react fragment to group together multiple elements together without adding more divs to the tree, you can declare a fragment in 2 ways:</p>
+                    <ul id="smallList">
+                        <li>&lt;&gt;</li>
+                        <li>&lt;/&gt;</li>
+                        <li>&lt;fragment&gt;</li>
+                        <li>&lt;/fragment&gt;</li>
+                    </ul>
+                    <p>React uses a system called components that are similar to functions that return HTML elements, an example of one would be:</p>
+                    <ul id="smallList">
+                        <li>function componentName () {</li>
+                        <li>	return (</li>
+                        <li>		&lt;p&gt;text&lt;/p&gt;</li>
+                        <li>	)</li>
+                        <li>}</li>
+                        <li>export default componentName</li>
+                    </ul>
+                    <p>You can also pass in javascript into the html using {}</p>
+                    <img src="images/Jsinhtml.png" id="mediumDiagram">
+                    <p>You can pass things into components using something called props, anything in line whith the component being called will be attached to an object that is passed as a parameter, this is hard to explain so an example can be seen here:</p>
+                    <img src="images/Articles.png" id="mediumDiagram">
+                    <img src="images/Props.png" id="mediumDiagram">
+                    <p>You can use the passed in props in 2 ways, dot notation using the props object or interpreting the objects properties straight into variables using {propertyNames}</p>
+                    <img src="images/propsObject.png" id="mediumDiagram">
                 </div>
                 <div class="day">
                     <li>Tuesday - </li>
