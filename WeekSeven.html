@@ -75,8 +75,43 @@
                     <img src="images/propsObject.png" id="mediumDiagram">
                 </div>
                 <div class="day">
-                    <li>Tuesday - </li>
+                    <li>Tuesday - MongoDB Atlas and React States</li>
                     <div class="divider"></div>
+                    <p>On Tuesday morning we set up a mongoDB atlas account and cluster to start learning how to interact with cloud based databases, this worked similarly to mongoDB compass and MongoSH so the only completely new parts to learn were the connection strings to compass and mongoSH</p>
+                    <p>We also learned about the different selection operators which are:</p>
+                    <ul id="smallList">
+                        <li>$eq:  //values are equal</li>
+                        <li>$ne:  //values are not equal</li>
+                        <li>$gt:  // value is greater than another value</li>
+                        <li>$gte:  // value is greater than or equal to another value</li>
+                        <li>$lt:  //value is less than another value</li>
+                        <li>$lte:  //value is less than or equal to another value</li>
+                        <li>$in:  //value is matched within an array</li>
+                        <li>$all:  //value appears in the array at some point</li>
+                    </ul>
+                    <p>Some examples of how to use these would be:</p>
+                    <ul id="smallList">
+                        <li>db.Cars.find({stock: {$gte: 15}})  //finds all records where stock is greater than or equal to 15</li>
+                        <li>db.Cars.find({Fuel: {$all: ["Petrol","Hybrid"]}})  //finds all records where Fuel contains "Petrol" and "Hybrid" at some point in any order</li>
+                    </ul>
+                    <p>Another thing we learned about was aggregate which allows you to group data together and $count: which returns the number of values of what you put into it</p>
+                    <p>db.Cars.aggregate([{$count: "Model"}])<br>Would return the number of "Model"s</p>
+                    <div class="divider"></div>
+                    <h2>React States</h2>
+                    <p>In the afternoon we learned about react states which are a way of passing values through the program that will be tracked so that other elements can be updated, when the state changes, all associated objects rerender. It is good practice to create the state in the root folder and have it be passed down through props for other components to use</p>
+                    <p>To use states you first have to import it:</p>
+                    <img src="images/importUseState.png">
+                    <p>Once imported you can set up and use a state using the following syntax:</p>
+                    <img src="images/settingUseState.png" id="mediumDiagram">
+                    <p>We also took a look into the map function that lets you iterate through all element in an array, you can do this with an index or without an index based on your needs</p>
+                    <img src="images/mapComponents.png" id="mediumDiagram">
+                    <br>
+                    <img src="images/mapWithIndex.png" id="mediumDiagram">
+                    <p>Another thing we were taught is one of the ways to edit the state along with a new operator, the ... or spread operator which copies all the element sof the array it is paired with which we used to create a copy of state, alter it and then set the state to this new updated version</p>
+                    <p>Functions used to update the state are often passed down through props and should be passed using empty functions () => functionName so they are not called whilst being set</p>
+                    <img src="images/updateState.png" id="bigDiagram">
+                    <br>
+                    <img src="images/onClickDelete.png" id="bigDiagram">
                 </div>
                 <div class="day">
                     <li>Wednesday - </li>
